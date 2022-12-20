@@ -1,0 +1,333 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+/*box1*/
+.box1 {
+    display: grid;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    padding: 1rem 7rem;
+    align-items: center;
+}
+.header span{
+    font-weight: 700;
+    color: hsl(216, 30%, 68%);
+}
+.header div{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: minmax(8rem, auto) minmax(2rem, auto) minmax(5rem, auto) 1fr;
+    grid-gap: 0.25rem;
+    justify-items: center;
+    align-items: center;
+}
+.header button {
+    background-color: white;
+    border: solid;
+    border-width: 2px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border-color: hsl(256, 26%, 20%);
+    color: hsl(256, 26%, 20%);
+    text-transform: uppercase;
+}
+.hamburger {
+    display: none;
+}
+.menu {
+    display: none;
+}
+.a {
+    padding: 5rem 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(./images/bg-pattern-intro-left-desktop.svg), url(./images/bg-pattern-intro-right-desktop.svg), linear-gradient(hsl(256, 26%, 20%) 80%, white 20%);
+    color: white;
+    background-repeat: no-repeat;
+    background-position-x: left, right;
+    background-position-y: bottom, top;
+}
+.a img {
+    max-width: 100%;
+}
+.a h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.a div {
+    padding-right: 5rem;
+}
+.a button {
+    background-color: hsl(256, 26%, 20%);
+    border: solid;
+    border-width: 2px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+.a hr {
+    width: 25%;
+    float: left;
+}
+/*box2*/
+.box2 {
+    padding: 1rem 7rem 10rem;
+    display: grid;
+    grid-gap: 3rem;
+}
+.box2 h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.b {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 0 0 5rem;
+}
+.b img {
+    max-width: 100%;
+}
+.b h3 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.b p {
+    color: hsl(216, 30%, 68%);
+}
+.f {
+    background-color: hsl(256, 26%, 20%);
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.f button {
+    background-color: hsl(256, 26%, 20%);
+    border: solid;
+    border-width: 2px;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+}
+.f div {
+    justify-self: end;
+}
+/*box3*/
+.box3 {
+    display: grid;
+    background-color: hsl(0, 0%, 98%);
+    padding: 3rem 0;
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+.g {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    padding: 1rem 7rem;
+}
+.icons {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+.h {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: left;
+    padding: 1rem 7rem;
+    grid-gap: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.h div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+}
+.g hr{
+    grid-column: 1/3;
+    width: 100%;
+    margin: 2rem 0 0;
+}
+.heading {
+    font-weight: 400;
+}
+/*active states*/
+.header button:hover{
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    cursor: pointer;
+}
+.header span:hover{
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+.a button:hover{
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+    border-color: white;
+    cursor: pointer;
+}
+.f button:hover{
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+    border-color: white;
+    cursor: pointer;
+}
+.h span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.icons img:hover{
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+/*responsive*/
+@media (max-width:1024px) and (min-width:768px) {
+    .header{
+        padding: 1rem 3rem;
+    }
+    .a {
+        padding: 5rem 3rem;
+        background-image: url(./images/bg-pattern-intro-left-desktop.svg), url(./images/bg-pattern-intro-right-desktop.svg), linear-gradient(hsl(256, 26%, 20%) 90%, white 10%);;
+    }
+    .a div {
+        padding-right: 1rem;
+    }
+    .box2{
+        padding: 1rem 3rem 10rem;
+    }
+    .g {
+        padding: 1rem 3rem;
+    }
+    .h {
+        padding: 1rem 3rem;
+    }
+    .f {
+        background-size: cover;
+    }
+}
+@media (max-width:768px) {
+    .header {
+        padding: 1rem;
+    }
+    .header div {
+        display: none;
+    }
+    .hamburger {
+        display: unset;
+        justify-self: end;
+    }
+    .click {
+        display: grid;
+        justify-items: center;
+        grid-gap: 2rem;
+        padding: 20% 0 100%;
+        background-color: hsl(270, 9%, 17%);
+        color: white;
+        background-image: url(./images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+    .click button {
+        background-color: hsl(270, 9%, 17%);
+        border: solid;
+        border-width: 2px;
+        padding: 0.5rem 1rem;
+        color: white;
+        font-weight: 400;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+    }
+    .a {
+        grid-template-columns: 1fr;
+        padding: 0 0 1rem;
+        background-image: unset;
+    }
+    .a img{
+        grid-row: 1/2;
+        width: 100%;
+    }
+    .a div {
+        padding: 1rem;
+        text-align: center;
+        background-image: url(./images/bg-pattern-intro-left-mobile.svg), url(./images/bg-pattern-intro-right-mobile.svg), linear-gradient(hsl(256, 26%, 20%) 95%, white 5%);
+        background-repeat: no-repeat;
+        background-position-x: left, right;
+        background-position-y: top, bottom;
+    }
+    .a hr {
+        float: unset;
+    }
+    .a h1 {
+        font-size: 2.25rem;
+    }
+    .box2{
+        padding: 1rem 1rem 10rem;
+        text-align: center;
+    }
+    .box2 h2 {
+        font-size: 2rem;
+    }
+    .b {
+        grid-template-columns: 1fr;
+    }
+    .f {
+        grid-template-columns: 1fr;
+        padding: 0 3rem 3rem;
+        background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    }
+    .f div {
+        justify-self: center;
+        background-size: contain;
+    }
+    .box3 {
+        background-image: url(./images/bg-pattern-footer-mobile.svg);
+        background-position: left top;
+        background-size: contain;
+    }
+    .g {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 1.5rem;
+    }
+    .icons{
+        justify-self: center;
+    }
+    .g hr{
+        grid-column: 1/2;
+    }
+    .h {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+}
